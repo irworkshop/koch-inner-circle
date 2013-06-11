@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Koch Inner Circle</title>
+    <link rel="stylesheet" type="text/css" href="components/fancybox/source/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="components/jquery/jquery.min.js"></script>
+    <script src="components/fancybox/source/jquery.fancybox.pack.js"></script>
+    <script src="components/tabletop/tabletop.js"></script>
+    <script src="components/underscore/underscore-min.js"></script>
+    <script src="js/inner-circle.js"></script>
+
+    <script type="x-jst" id="image-template">
+    <div class="koch-image">
+        <a href="#">
+            <img src="<%= image %>">
+            <div class="koch-caption"><%= name %></div>
+        </a>
+    </div>
+    </script>
+</head>
+<body>
+    <div id="koch-inner-circle"></div>
+
+</body>
+</html>
