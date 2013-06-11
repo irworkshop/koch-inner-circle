@@ -21,7 +21,8 @@ var defaults = {
     currentorganization: "",
     currenttitle: "",
     pastpositions: "",
-    image: "http://placehold.it/200x250"
+    thumbnail: "http://placehold.it/200x250",
+    image: "http://placehold.it/400x500"
 }
 
 function render(data, tabletop) {
@@ -39,8 +40,15 @@ function render(data, tabletop) {
                 d[key] = defaults[key];
             }
         }
-        root.append(template(d))
+        root.append(template(d));
     });
+
+    fancybox();
+}
+
+function fancybox() {
+    // apply fancybox
+    $('.koch-image a').fancybox();
 }
 
 var tabletop = new Tabletop(TABLE);
